@@ -1,0 +1,38 @@
+.wrap{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+header,footer{
+    flex-shrink: 0;
+}
+section{
+    flex-grow: 1;
+}
+.sec-a>img{
+    width: 100%;
+    display: block;
+}
+.sec-b{
+    width: 70%;
+    margin:0 auto;
+}
+
+.sec-c{
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.sec-c>div{
+width: 15%;
+text-align: center;
+margin-right: 20px;
+margin-top: 30px;
+}
+.sec-c>div>a{
+    color:#0092f8
+}
+.sec-c>div>a:hover{
+    color:red;
+}

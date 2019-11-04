@@ -1,0 +1,90 @@
+.wrap{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+header,footer{
+    flex-shrink: 0;
+}
+section{
+    flex-grow: 1;
+}
+.tt{
+    display: flex;
+    justify-content: space-between;
+}
+.tt>div{
+    width: 50%;
+}
+.tt-top{
+    width: 95%;
+    border-bottom: 1px solid #e8e8e8;
+}
+.tt-top>div{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding:0 10px 15px;
+    border-bottom: 2px solid red;
+    z-index: 3;
+}
+.tt-top>div>img{
+    width: 5px;
+    margin-right: 10px;
+}
+.tt-top>div>span{
+    color:#e93632;
+}
+.tt-main{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+.tt-main>div{
+    width: 30%;
+    text-align: center;
+    margin-right: 3%;
+    border: 1px solid #f0f0f0;
+    margin-top: 20px;
+}
+.tt-main>div>a{
+    display: block;
+    color:#000000;
+    padding:5px 0;
+}
+.tt-main>div>a:hover{
+    color: white;
+    background-color: #c0101a;
+}
+.tt-list{
+    margin-top: 20px;
+}
+.tt-list>div{
+    display: flex;
+    align-items: center;
+   padding: 5px 0;
+}
+.tt-list>div>div{
+    width: 6px;
+    margin-right: 10px;
+}
+.tt-list>div>div>img{
+    display: block;
+    width: 100%;
+    flex-shrink: 0;
+}
+.tt-list>div>span:nth-child(2){
+    flex-grow: 1;
+}
+.tt-list>div>span:last-child{
+    flex-shrink: 0;
+    color:#bbbbbb;
+}
+.tt-list>div>span>a{
+    color:#7e7e7e;
+    font-size: 14px;
+}
+.tt-list>div>span>a:hover{
+    color:red;
+}

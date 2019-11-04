@@ -1,0 +1,40 @@
+.wrap{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header,footer{
+    flex-shrink: 0;
+}
+section{
+    flex-grow: 1;
+}
+.sec-a{
+    width: 40%;
+    margin:0 auto;
+    padding: 20px;
+}
+.good{
+    width: 20%;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.good>div:first-child>img{
+    display: block;
+    width: 100%;
+}
+.good>div:last-child>p{
+    font-size: 14px;
+    margin-top: 7px;
+}
+.good>div>p>span:first-child{
+    margin-right: 5px;
+}
+.good-inner{
+    display: flex;
+
+}
+

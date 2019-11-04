@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="./css/public.css"> -->
+    <link rel="stylesheet" href="./css/demo.css">
+    <link rel="stylesheet" href="./css/zTreeStyle/zTreeStyle.css">
+    <link rel="stylesheet" href="./css/open.css">
+    <title>公开 </title>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div>
+                <img src="./images/open_01.jpg" alt="">
+            </div>
+        </header>
+
+
+        <!-- 树状图，地图 -->
+        <section>
+            <div>
+                <ul id="treeDemo" class="ztree"></ul>
+            </div>
+            <div>
+                <div id="container"></div>
+            </div>
+        </section>
+
+
+
+        <footer>
+            <div class="foot-inner">
+                <div class="f-a">
+                    <ul>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">联系我们</a></li>
+                        <li><a href="#">使用帮助</a></li>
+                        <li><a href="#">意见反馈</a></li>
+                    </ul>
+                </div>
+                <div class="f-b">
+                    <ul>
+                        <li>中共某某市某某区委组织部@版权所有渝ICP备10201900号-1</li>
+                        <li>技术支持:某某某技术</li>
+                        <li>访问总量:10614374</li>
+                    </ul>
+                </div>
+                <!-- <div class="f-c">
+                    <img src="./images/foot_21.jpg" alt="">
+                </div> -->
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="./js/jquery-3.3.1.js"></script>
+    <script src="./js/jquery-1.4.4.min.js"></script>
+    <script src="./js/jquery.ztree.core.js"></script>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=1311e6adb631835ce807a255c880bba3">
+    </script>
+    <script>
+        var setting = {};
+        var zNodes = [
+            {
+                name: "卢龙各乡镇", open: true,
+                icon: "css/zTreeStyle/img/zidingyi.png",
+                children: [
+                    {
+                        name: "卢龙镇党委>",
+                        icon: "css/zTreeStyle/img/zidingyi.png",
+                        url: "https://www.baidu.com",
+                        children: [
+                            {
+                                name: "叶子节点111",
+                                icon: "css/zTreeStyle/img/zidingyi.png"
+                            },
+                            {
+                                name: "叶子节点112",
+                                icon: "css/zTreeStyle/img/zidingyi.png"
+                            },
+                            {
+                                name: "叶子节点113",
+                                icon: "css/zTreeStyle/img/zidingyi.png"
+                            },
+                            {
+                                name: "叶子节点114",
+                                icon: "css/zTreeStyle/img/zidingyi.png"
+                            }
+                        ]
+                    },
+                    {
+                        name: "印庄乡党委>",
+                        icon: "css/zTreeStyle/img/zidingyi.png",
+                        children: [
+                            {
+                                name: "叶子节点121",
+                                icon: "css/zTreeStyle/img/zidingyi.png"
+                            },
+                            {
+                                name: "叶子节点122",
+                                icon: "css/zTreeStyle/img/zidingyi.png"
+                            },
+                            {
+                                name: "叶子节点123",
+                                icon: "css/zTreeStyle/img/zidingyi.png"
+                            },
+                            {
+                                name: "叶子节点124",
+                                icon: "css/zTreeStyle/img/zidingyi.png"
+                            }
+                        ]
+                    },
+                    {
+                        name: "双望镇党委>",
+                        icon: "css/zTreeStyle/img/zidingyi.png",
+                        children: [
+                            {
+                                name: "叶子节点121",
+                                icon: "css/zTreeStyle/img/zidingyi.png"
+                            },
+                            {
+                                name: "叶子节点122",
+                                icon: "css/zTreeStyle/img/zidingyi.png"
+                            }
+                        ]
+                    },
+                    {
+                        name: "下寨乡党委>",
+                        icon: "css/zTreeStyle/img/zidingyi.png",
+                        children: [
+                            {
+                                name: "叶子节点121",
+                                icon: "css/zTreeStyle/img/zidingyi.png"
+                            },
+                            {
+                                name: "叶子节点122",
+                                icon: "css/zTreeStyle/img/zidingyi.png"
+                            }
+                        ]
+                    },
+                    {
+                        name: "刘田各庄镇党委>",
+                        icon: "css/zTreeStyle/img/zidingyi.png",
+                        children: [
+                            {
+                                name: "叶子节点121",
+                                icon: "css/zTreeStyle/img/zidingyi.png"
+                            },
+                            {
+                                name: "叶子节点122",
+                                icon: "css/zTreeStyle/img/zidingyi.png"
+                            }
+                        ]
+                    },
+                    {
+                        name: "蛤泊镇党委>",
+                        icon: "css/zTreeStyle/img/zidingyi.png",
+                        children: [
+                            {
+                                name: "叶子节点121",
+                                icon: "css/zTreeStyle/img/zidingyi.png"
+                            },
+                            {
+                                name: "叶子节点122",
+                                icon: "css/zTreeStyle/img/zidingyi.png"
+                            }
+                        ]
+                    },
+                    {
+                        name: "木井镇党委>",
+                        icon: "css/zTreeStyle/img/zidingyi.png",
+                        children: [
+                            {
+                                name: "叶子节点121",
+                                icon: "css/zTreeStyle/img/zidingyi.png"
+                            },
+                            {
+                                name: "叶子节点122",
+                                icon: "css/zTreeStyle/img/zidingyi.png"
+                            },
+                            {
+                                name: "叶子节点123",
+                                icon: "css/zTreeStyle/img/zidingyi.png"
+                            },
+                            {
+                                name: "叶子节点124",
+                                icon: "css/zTreeStyle/img/zidingyi.png"
+                            }
+                        ],
+                        icon: "css/zTreeStyle/img/zidingyi.png"
+                    },
+                    {
+                        name: "石门镇党委>",
+                        icon: "css/zTreeStyle/img/zidingyi.png",
+                        children: [
+                            {
+                                name: "叶子节点121",
+                                icon: "css/zTreeStyle/img/zidingyi.png"
+                            },
+                            {
+                                name: "叶子节点122",
+                                icon: "css/zTreeStyle/img/zidingyi.png"
+                            },
+                            {
+                                name: "叶子节点123",
+                                icon: "css/zTreeStyle/img/zidingyi.png"
+                            },
+                            {
+                                name: "叶子节点124",
+                                icon: "css/zTreeStyle/img/zidingyi.png"
+                            }
+                        ]
+                    },
+                ]
+            },
+
+        ];
+        const self = this;
+
+        //树形图start
+        $(document).ready(function () {
+            $.fn.zTree.init($("#treeDemo"), setting, zNodes);
+        })
+        //树形图end
+
+
+        //地图
+        window.onload = function () {
+            var map = new AMap.Map('container', {
+                resizeEnable: true,
+                center: [118.89833450317384, 39.87644756906335],
+                zoom: 13
+            });
+            var lnglats = [
+                [118.892552, 39.892171, "卢龙县党支部", "崔庆斌","20","1"],
+                [118.983735, 39.956417, "印庄乡党委", "崔庆斌","20","5"],
+                [119.059585, 39.903363, "双望镇党委", "崔庆斌","20","16"],
+                [118.964635, 39.887657, "下寨乡党委", "崔庆斌","20","8"],
+                [119.028167, 39.816459, "刘田各庄镇党委", "崔庆斌","20","0"],
+                [119.012749, 39.76842, "蛤泊镇党委", "崔庆斌","20","8"],
+                [118.921774, 39.756131, "木井镇党委", "崔庆斌","20","9"],
+                [119.60746, 40.090336, "石门寨党委", "崔庆斌","20","3"]
+            ];
+
+            var infoWindow = new AMap.InfoWindow({ offset: new AMap.Pixel(0, -30) });
+            for (var i = 0, marker; i < lnglats.length; i++) {
+                var marker = new AMap.Marker({
+                    position: lnglats[i],
+                    map: map
+                });
+                marker.content = '<div class="tit ">' + "<div>" + "<span>" + "机构名称:" + "</span>" + "</div>" +
+                    "<div>" + lnglats[i][2] + "</div>" + '</div>';
+                marker.content += '<div class="tit">' + "<div>" + "负责人:" + "</div>" +
+                    "<div>" + "<span>" + lnglats[i][3] + "</span>" + "</div>" + '</div>'
+                marker.content += '<div class="tit " id="text">' + "<div>" + "<span>" + "简介:" + "</span>" + "</div>" +
+                    "<div>" + lnglats[i][2] + "</div>" + '</div>'
+                marker.content += '<div class="tit titi">' + "<div>" + "<span>" + "其他:" + "</span>" + "</div>" +
+                    "<div>" +"<span>"+"党员:"+lnglats[i][4]+"人"+"</span>"+"<span>"+"近三月活动次数:"+lnglats[i][5]+"次"+"</span>"+ "</div>" + '</div>'
+                marker.on('mouseover', infoOpen);
+                marker.on('mouseout', infoClose);
+                marker.on('click', newMAp);
+            }
+            //鼠标滑过关闭函数
+            function infoClose(e) {
+                infoWindow.close(map, e.target.getPosition());
+            }
+            //鼠标滑过打开函数
+            function infoOpen(e) {
+                infoWindow.setContent(e.target.content);
+                infoWindow.open(map, e.target.getPosition());
+            }
+
+            //鼠标点击事件,设置地图中心点及放大显示级别
+            function newMAp(e) {
+                console.log(e)
+                window.open("openMain.html")
+                //map.setCenter(e.target.getPosition());
+                // map.setZoomAndCenter(15, e.target.getPosition());
+
+                // var infoWindow = new AMap.InfoWindow({ offset: new AMap.Pixel(0, -30) });
+                // infoWindow.setContent(e.target.content);
+                // infoWindow.open(map, e.target.getPosition());
+            }
+
+
+
+            // map.setFitView();
+
+
+            // 创建一个 Marker 实例：
+            // var marker = new AMap.Marker({
+            //     position: new AMap.LngLat(118.892552, 39.892171),   // 经纬度对象，也可以是经纬度构成的一维数组[116.39, 39.9]
+            //     title:"111"
+            // });
+            // var marker1 = new AMap.Marker({
+            //     position: new AMap.LngLat(118.983735, 39.956417),   // 经纬度对象，也可以是经纬度构成的一维数组[116.39, 39.9]
+            //     title: '印庄乡党委'
+            // });
+
+            // var marker2 = new AMap.Marker({
+            //     position: new AMap.LngLat(119.059585, 39.903363),   // 经纬度对象，也可以是经纬度构成的一维数组[116.39, 39.9]
+            //     title: '双望镇党委'
+            // });
+            // var marker3 = new AMap.Marker({
+            //     position: new AMap.LngLat(118.964635, 39.887657),   // 经纬度对象，也可以是经纬度构成的一维数组[116.39, 39.9]
+            //     title: '下寨乡党委'
+            // });
+            // var marker4 = new AMap.Marker({
+            //     position: new AMap.LngLat(119.028167, 39.816459),   // 经纬度对象，也可以是经纬度构成的一维数组[116.39, 39.9]
+            //     title: '刘田各庄镇党委'
+            // });
+            // var marker5 = new AMap.Marker({
+            //     position: new AMap.LngLat(119.012749, 39.76842),   // 经纬度对象，也可以是经纬度构成的一维数组[116.39, 39.9]
+            //     title: '蛤泊镇党委'
+            // });
+            // var marker6 = new AMap.Marker({
+            //     position: new AMap.LngLat(118.921774, 39.756131),   // 经纬度对象，也可以是经纬度构成的一维数组[116.39, 39.9]
+            //     title: '木井镇党委'
+            // });
+            // var marker7 = new AMap.Marker({
+            //     position: new AMap.LngLat(119.60746, 40.090336),   // 经纬度对象，也可以是经纬度构成的一维数组[116.39, 39.9]
+            //     title: '石门寨党委'
+            // });
+            //创建多个marker的集合
+            // var markerList = [marker, marker1, marker2, marker3, marker4
+            //     , marker5, marker6, marker7]
+
+            // 将创建的点标记添加到已有的地图实例：
+            // map.add(markerList);
+
+
+        }
+
+    </script>
+
+</body>
+
+</html>

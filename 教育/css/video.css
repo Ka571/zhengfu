@@ -1,0 +1,47 @@
+.video{
+    width: 70%;
+    margin:0 auto;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.video>div{
+    width: 23%;
+    margin-right: 2%;
+    margin-bottom: 20px;
+}
+.video>div>div.v>img{
+    display: block;
+    width: 100%;
+}
+
+/* .video>div>div>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+.video>div>div>div>img{
+    display: block;
+    width: 16px;
+    height: 18px;
+   margin-right: 8px;
+}
+.v-a{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border:1px solid #ccc;
+    border-top: none;
+}
+.v-a>div:first-child{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.v-a>div:last-child{
+    display: flex;
+    padding-left: 5px;
+    align-items: center;
+}
+.v-a>div:last-child>span{
+    font-size: 14px;
+    color:#999;
+}

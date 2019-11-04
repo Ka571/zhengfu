@@ -1,0 +1,70 @@
+.wrap{
+    width: 100vw;
+    height: 100vh;
+}
+.life-inner{
+    width: 70%;
+    margin:0 auto;
+    font-size: 26px;
+}
+.life-top{
+    padding: 20px 0;
+    /* background-image: linear-gradient(to right, #b31c23 , #b22b32,#b31c23); */
+    color:white;
+    background-image: url("../images/2019.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.life-main>div{
+    width: 70%;
+    margin:0 auto;
+}
+.life-main>div>div:first-child{
+    padding: 15px 0;
+    border-bottom: 1px solid #c3c3c3;
+}
+.life-main>div>div>p{
+    margin:0;
+    color:#c3c3c3;
+}
+.life-main .input{
+    width: 30%;
+    margin:20px auto 0;
+}
+.life-main .input>div{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.life-main .input>div>div{
+    width: 30%;
+    text-align: right;
+    margin-right: 20px;
+}
+.life-main .input>div>div>span:first-child{
+    color:red;
+    flex-shrink: 0;
+}
+.life-main .input>div>span:nth-child(2){
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+.life-main .input>div>input:last-child{
+    flex-grow: 0;
+    font-size: 14px;
+    padding: 5px;
+    border:1px solid #888;
+    border:1px solid #c3c3c3;
+}
+.sub>a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    color:white;
+    background-color: #b81d25;
+    line-height: 35px;
+    border-radius: 5px;
+}

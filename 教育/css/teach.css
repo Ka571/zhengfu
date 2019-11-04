@@ -1,0 +1,126 @@
+.banner>img{
+    display: block;
+    width: 100%;
+}
+.main{
+    width: 70%;
+    margin:0 auto;
+    padding:40px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.main>div:first-child{
+    width: 55%;
+}
+.main>div:last-child{
+    width: 45%;
+    padding: 5px 15px;
+}
+.main-iner>div{
+    width: 31%;
+
+}
+.main-iner{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.main-iner>div>a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 14px 0;
+}
+.main-iner>div>a:hover img{
+    transform: scale(1.3);
+}
+.main-iner>div>a>div{
+    width: 40%;
+    margin:0 auto;
+    padding:15px;
+    /* border:1px solid black; */
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+.main-iner>div>a>div>img{
+    display: block;
+    width: 100%;
+    transition:  all 1s;
+}
+.main-iner>div>a>p{
+    font-size: 14px;
+    margin-top: 8px;
+    color:white;
+}
+
+
+/* main-right */
+.main-right{
+    display: flex;
+    
+}
+.main-right>div{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    position: relative;
+    height: 30px;
+}
+.main-right>div>span{
+    position: absolute;
+    left:6%;
+    top:6px
+}
+.main-right>div>img{
+    width: 5px;
+    height: 7px;
+    display: none;
+    margin-right: 8px;
+}
+.main-right>div.block>img{
+    display: block;
+}
+.main-right>div.block>span{
+    color:red;
+    font-weight: bold;
+}
+
+/* 右侧选项卡 */
+.showOne{margin-top: 8px;}
+.showOne>ul{
+    display: none;
+}
+.showOne>ul.show-a{
+    display: block;
+}
+.ttt>li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 5px ;
+
+}
+.ttt>li>div{
+    width: 6px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+.ttt>li>span{
+    width: 20%;
+    flex-shrink: 0;
+    font-size: 12px;
+}
+.ttt>li>a{
+    flex-grow: 1;
+    font-size: 14px;
+    color: #7a7a7a;
+    overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
+}
+.ttt>li>a:hover{
+    color:red;
+}
